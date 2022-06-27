@@ -29,5 +29,6 @@ class HomeActivityTest {
         onView(withId(R.id.edt_note)).check(matches(isDisplayed()))
         onView(withId(R.id.imb_end_time)).check(matches(isDisplayed()))
         onView(withId(R.id.imb_start_time)).check(matches(isDisplayed()))
+
     }
 }
