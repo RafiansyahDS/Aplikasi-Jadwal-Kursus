@@ -73,6 +73,12 @@ class HomeActivity : AppCompatActivity() {
         return true
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        finish()
+        startActivity(intent)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val intent: Intent = when (item.itemId) {
 
